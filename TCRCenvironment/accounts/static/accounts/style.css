@@ -1,0 +1,275 @@
+/* -----------------------------navbar----------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url("bg4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.wrapper{
+    min-height: 110vh;
+    background: rgba(39, 39, 39, .2);
+}
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 150px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
+}
+.nav-logo{
+    position: fixed;
+    top:20px;
+    left:20px;
+}
+.nav-menu {
+    position: fixed;
+    top: 20px;
+}
+.nav-menu ul{
+    display: flex;
+    float:left;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid #fff;
+}
+/* -----------------------------navbar------------------------------- */
+
+/* ----------------------------login form---------------------------- */
+.form-box{
+    position: absolute;
+    top:30%;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
+}
+.login-container{
+    position: absolute;
+    bottom: 100px;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+header{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+.input-field{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+.input-field:hover, .input-field:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+.input-box i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #fff;
+}
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.submit:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+/* ----------------------------login form----------------------------*/
+
+/* ----------------------------- profile ----------------------------*/
+.mine{
+    position: fixed;
+    top:190px;
+    left:70px;
+    font-size:150px;
+    color: #fff;
+}
+
+.mine2{
+    position: fixed;
+    top:190px;
+    left:80px;
+    font-size:50px;
+    color: #fff;
+}
+
+.mine3{
+    position: fixed;
+    top:390px;
+    left:70px;
+    font-size:80px;
+    color: #fff;
+}
+
+.mine4{
+    position: fixed;
+    top:650px;
+    left:80px;
+    font-size:40px;
+    color: #fff;
+}
+
+/* ----------------------------- profile ----------------------------*/
+
+.mybutton {
+	display: inline-block;
+	font-weight: 400;
+	color: #212529;
+	text-align: center;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	color: #fff;
+	background-color: #007bff;
+}
+
+
+.mybutton:hover{
+  	background-color: #0069d9;
+
+}
+
+/* ----------------------------- Home ----------------------------*/
+
+.alright{
+    position: fixed;
+    left:350px;
+    top:220px;
+    align-items: center;
+    width:800px;
+    height:600px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 30px;
+    scroll-behavior: smooth;
+    overflow:scroll
+}
+
+.alright2{
+    margin-top: 20px;
+    position:relative;
+    left:2.5%;
+    width: 95%;
+    padding: 0 10px 0 45px;
+    border: solid;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+
+.alright3{
+    position: fixed;
+    left:1050px;
+    top:140px;
+    font-size: 15px;
+    height: 70px;
+    width: 100px;
+    border-radius: 20px;
+}
+.alright4{
+    position: fixed;
+    left:350px;
+    top:140px;
+    font-size: 15px;
+    height: 70px;
+    width: 700px;
+    
+}
+
+.input-field2{
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    height: 70px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+/* ----------------------------- Home ----------------------------*/
+/* -------------------------- Edit Profile -------------------------*/
+
+.login-container2{
+    position: absolute;
+    bottom: 0px;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+/* -------------------------- Edit Profile -------------------------*/
+/* ---------------------------- PEOPLE ---------------------------*/
+.why{
+    font-size: 40px;
+    color: #fff;
+}
+
+.why2{
+    position:absolute;
+    left:80px;
+    top:20%;
+    height:600px;
+    width:1000px;
+    scroll-behavior: smooth;
+    overflow:scroll
+
+}
+
+
+/* ---------------------------- PEOPLE ---------------------------*/

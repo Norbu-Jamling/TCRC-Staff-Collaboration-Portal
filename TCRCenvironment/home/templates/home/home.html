@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<form method='post' >
+    <div class='alright4'>
+    {% csrf_token %}
+    {{ form.post}}
+    </div>
+    <button type='submit' class='alright3'>submit</button>
+</form>
+<div class='alright'>
+{% for post in posts %}
+<div class='alright2'>
+<h1>{{post.post}}</h1>
+<p> Posted by {{post.user.userprofile.name}} on {{post.created}}</p>
+</div>
+{% endfor%} 
+</div>
+{% endblock %}

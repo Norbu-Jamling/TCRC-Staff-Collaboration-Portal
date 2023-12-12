@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}
+Profile
+{% endblock %}
+
+{% block body %}
+<h3 class="mine2">{{ user.userprofile.department }}</h3>
+<h1 class="mine">{{ user.userprofile.role }}</h1>
+<h2 class="mine3">{{ user.userprofile.name }}</h2>
+<h2 class="mine4">WORKING ON :<br>{{ user.userprofile.current_project }}</h2>
+{% endblock %}

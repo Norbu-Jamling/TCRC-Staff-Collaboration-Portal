@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Edit Profile
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="form-box">
+    <div class="login-container2" id="login">
+    <div class="top">
+        <header>Edit Profile</header>
+    </div>
+    <form action='' method='POST'>
+        {%csrf_token%}
+        <div class="input-box">
+            {{ form.name }}
+            <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+            {{ form.department }}
+            <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+            {{ form.role }}
+            <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+            {{ form.current_project }}
+            <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+            <input type="submit" class="submit" value="Update">
+        </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
